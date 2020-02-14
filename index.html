@@ -8,6 +8,14 @@
   </head>
   <body>
     <h1>My Map</h1>
-    
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoid2luZzc4NyIsImEiOiJjazZtcmNjZjMwNXlzM2xxb2p0YnkwNzNkIn0.MBGFjku4tTGihMe-EN_bGA';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+    </script>
+
   </body>
 </html>
