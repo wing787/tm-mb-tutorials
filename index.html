@@ -18,6 +18,17 @@
         zoom: 13,
         style: 'mapbox://styles/wing787/ck6msvmox1fyw1ildicrydkqc'
       });
+      // Navigation Control
+      map.addControl(
+        new mapboxgl.NavigationControl(), 'top-left'
+      );
+      // Geolocation Control
+      map.addControl(new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true
+        },
+        trackUserLocation: true
+      }));
     </script>
 
   </body>
